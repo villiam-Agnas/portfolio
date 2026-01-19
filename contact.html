@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <script src="./script/main-js.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="./img/pixil-frame-0 (56).png" alt="VA Logo" height="125">
+        </a>
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="main">
+        <div class="information">
+                <h2>information</h2>
+                <ul>
+                    <li>Villiam Agnas</li>
+                    <li>villiamagnas@gmail.com</li>
+                    <li>0704471081</li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <form class="user__information" action="mailto: villiamagnas@gmail.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Contact me</legend>
+                    <div class="user__input">
+                        <label for="first__name">Name</label>
+                        <input type="text" name="first__name" id="first__name" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="user__input">
+                        <label for="last__name">Business</label>
+                        <input type="text" name="last__name" id="last__name" placeholder="Enter your last name" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>More info</legend>
+                    <div class="user__input">
+                        <label for="description">Message</label>
+                        <textarea name="description" id="description"></textarea>
+                    </div>
+                </fieldset>
+                <button class="submit">Send</button>
+            </form>
+    </section>
+    <footer class="footer">
+        <div class="footer"> © Villiam </div>
+    </footer>
+</body>
+</html>
