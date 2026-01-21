@@ -31,26 +31,6 @@ prevBtn.addEventListener('click', () => {
     showSlide(current);
 });
 
-let startX = 0;
-
-slideshow.addEventListener('touchstart', e => {
-    startX = e.touches[0].clientX;
-});
-
-slideshow.addEventListener('touchend', e => {
-    const endX = e.changedTouches[0].clientX;
-    const diff = startX - endX;
-
-    if (Math.abs(diff) > 50) {
-        if (diff > 0) {
-            current = (current + 1) % slides.length;
-        } else {
-            current = (current - 1 + slides.length) % slides.length;
-        }
-        showSlide(current);
-    }
-});
-
 
 slides.forEach(slide => {
     const image = slide.querySelector('.me');

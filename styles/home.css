@@ -1,4 +1,7 @@
 .headshot {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
     
 }
 
@@ -117,6 +120,11 @@
     border: 3px solid black;
     border-radius: 5px;
     flex: 1;
+}
+
+.tech-skills {
+    margin: 20px auto;
+    text-align: center;
 }
 
 @media (min-width: 750px) {
