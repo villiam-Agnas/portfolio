@@ -13,7 +13,12 @@
         <a href="index.html">
             <img src="./img/pixil-frame-0 (56).png" alt="VA Logo" height="125">
         </a>
-        <nav>
+        <nav class="normal-nav">
+            <a class="normal-link" href="index.html" class="header-link">Home</a>
+            <a class="normal-link" href="projects.html" class="header-link">Projects</a>
+            <a class="normal-link" href="contact.html" class="header-link">Contact</a>
+        </nav>
+        <nav class="ham-nav">
             <div class="ham-menu">
                 <span></span>
                 <span></span>
@@ -22,9 +27,9 @@
         </nav>
         <div class="off-screen-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="ham-link" href="index.html">Home</a></li>
+                <li><a class="ham-link" href="projects.html">Projects</a></li>
+                <li><a class="ham-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -39,27 +44,26 @@
             </div>
         </div>
         <div class="wrapper">
-            <form class="user__information" action="mailto: villiamagnas@gmail.com" method="post" enctype="text/plain">
+            <form class="user-information" action="mailto: villiamagnas@gmail.com" method="post" enctype="text/plain">
                 <fieldset>
                     <legend>Contact me</legend>
-                    <div class="user__input">
-                        <label for="first__name">Name</label>
-                        <input type="text" name="first__name" id="first__name" placeholder="Enter your first name" required>
-                    </div>
-                    <div class="user__input">
-                        <label for="last__name">Business</label>
-                        <input type="text" name="last__name" id="last__name" placeholder="Enter your last name" required>
+                    <div class="user-input">
+                        <label for="first-name">Name or business</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Enter your name" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>More info</legend>
-                    <div class="user__input">
+                    <div class="user-input">
                         <label for="description">Message</label>
                         <textarea name="description" id="description"></textarea>
                     </div>
                 </fieldset>
                 <button class="submit">Send</button>
             </form>
+            <nav>
+                <a class="contact-link" href="https://github.com/villiam-Agnas">Link to my github</a>
+            </nav>
     </section>
     <footer class="footer">
         <div class="footer"> © Villiam </div>

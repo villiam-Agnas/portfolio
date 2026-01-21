@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/projects.css">
     <script src="./script/main-js.js" defer></script>
 </head>
 <body>
@@ -12,7 +13,12 @@
         <a href="index.html">
             <img src="./img/pixil-frame-0 (56).png" alt="VA Logo" height="125">
         </a>
-        <nav>
+        <nav class="normal-nav">
+            <a class="normal-link" href="index.html" class="header-link">Home</a>
+            <a class="normal-link" href="projects.html" class="header-link">Projects</a>
+            <a class="normal-link" href="contact.html" class="header-link">Contact</a>
+        </nav>
+        <nav class="ham-nav">
             <div class="ham-menu">
                 <span></span>
                 <span></span>
@@ -21,51 +27,63 @@
         </nav>
         <div class="off-screen-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="ham-link" href="index.html">Home</a></li>
+                <li><a class="ham-link" href="projects.html">Projects</a></li>
+                <li><a class="ham-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </header>
     <section class="main">
         <div class="project">
-            <div class="project-img">
-                <img src="./img/zoo.png" alt="Picture of website" width="500px" height="auto">
+            <div class="project-img-wrapper">
+                <img class="project-img" src="./img/zoo.png" alt="Picture of website" width="300px" height="auto">
             </div>
             <div class="project-desc">
                 <h2 class="project-title">Zoo Assignment</h2>
-                <p class="project-info"></p>
-                <a class="project-link" href="https://github.com/SgnCycles/FG-Assignment3-Zoo">Link to Github page</a>
+                <p class="project-info">Here me and a team of some of my classmates created a website to host some of the newly added animals in a zoo. Read about the birds, mammals and reptiles that exist in the australian bush!</p>
+                <nav class="project-nav">
+                    <a class="project-link" href="https://github.com/SgnCycles/FG-Assignment3-Zoo">Link to Github page</a>
+                    <a class="project-page" href="https://assignment3-zoo.vercel.app/">Link to live website</a>
+                </nav>
             </div>
         </div>
         <div class="project">
-            <div class="project-img">
-                <img src="./img/version.png" alt="Picture of website" width="500px" height="auto">
+            <div class="project-img-wrapper">
+                <img class="project-img"  src="./img/version.png" alt="Picture of website" width="300px" height="auto">
             </div>
             <div class="project-desc">
                 <h2 class="project-title">Version Control Assignment</h2>
-                <p class="project-info"></p>
-                <a class="project-link" href="https://github.com/villiam-Agnas/version-control-assignment">Link to Github page</a>
+                <p class="project-info">On this website you can read about version control and how its effectively used in a workplace. You can also find descriptions of the most common git commands and what they do.</p>
+                <nav class="project-nav">
+                    <a class="project-link" href="https://github.com/villiam-Agnas/version-control-assignment">Link to Github page</a>   
+                    <a class="project-page" href="https://villiam-agnas.github.io/version-control-assignment/">Link to live website</a>
+                </nav>
             </div>
         </div>
         <div class="project">
-            <div class="project-img">
-                <img src="./img/js-game.png" alt="Picture of website" width="500px" height="auto">
+            <div class="project-img-wrapper">
+                <img class="project-img"  src="./img/js-game.png" alt="Picture of website" width="300px" height="auto">
             </div>
             <div class="project-desc">
                 <h2 class="project-title">JS Game</h2>
-                <p class="project-info"></p>
-                <a class="project-link" href="https://github.com/villiam-Agnas/improved-js-game">Link to Github page</a>
+                <p class="project-info">In this assignment we where tasked to make a game with JavaScript and i decided to code blackjack. See if you got what it takes to beat the house!</p>
+                <nav class="project-nav">
+                    <a class="project-link" href="https://github.com/villiam-Agnas/improved-js-game">Link to Github page</a>
+                    <a class="project-page" href="https://villiam-agnas.github.io/improved-js-game/">Link to live website</a>
+                </nav>
             </div>
         </div>
         <div class="project">
-            <div class="project-img">
-                <img src="./img/book.png" alt="Picture of website" width="500px" height="auto">
+            <div class="project-img-wrapper">
+                <img class="project-img"  src="./img/book.png" alt="Picture of website" width="300px" height="auto">
             </div>
             <div class="project-desc">
                 <h2 class="project-title">The Book Shop Boys</h2>
-                <p class="project-info"></p>
+                <p class="project-info">Books are a big part of my interests so on this website you can read about the books i read trough the year 2025. But remember, no admittance except on party business!</p>
+            <nav class="project-nav">
                 <a class="project-link" href="https://github.com/villiam-Agnas/the-book-shop-boys">Link to Github page</a>
+                <a class="project-page" href="https://villiam-agnas.github.io/the-book-shop-boys/">Link to live website</a>
+            </nav>    
             </div>
         </div>
     </section>
