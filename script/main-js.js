@@ -4,8 +4,8 @@ const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 
 hamMenu.addEventListener("click", () => {
-hamMenu.classList.toggle("active");
-offScreenMenu.classList.toggle("active");
+    hamMenu.classList.toggle("active");
+    offScreenMenu.classList.toggle("active");
 });
 
 
@@ -107,3 +107,6 @@ slides.forEach(slide => {
         image.src = './img/front.png';
     });
 });
+
+
+
