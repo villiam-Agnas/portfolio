@@ -16,18 +16,26 @@ const slideshow = document.querySelector('.slideshow');
 
 let current = 0;
 
-function showSlide(index) {
+function showSlide(i) {
     slides.forEach(slide => slide.classList.remove('active'));
-    slides[index].classList.add('active');
+    slides[i].classList.add('active');
 }
 
 nextBtn.addEventListener('click', () => {
-    current = (current + 1) % slides.length;
+    if (current + 1 >= slides.length) {
+        current = 0
+    } else {
+        current += 1
+    }
     showSlide(current);
 });
 
 prevBtn.addEventListener('click', () => {
-    current = (current - 1 + slides.length) % slides.length;
+    if (current - 1 < 0) {
+        current = slides.length - 1
+    } else {
+        current -= 1
+    }
     showSlide(current);
 });
 
