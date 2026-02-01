@@ -1,8 +1,7 @@
 .headshot {
     width: 100%;
     height: auto;
-    max-width: 400px;
-    
+    max-width: 400px;  
 }
 
 .intro {
@@ -17,10 +16,12 @@
 
 .intro-text {
     margin: 30px;
+    display: none;
 }
 
 .intro-short {
     font-size: 1.5rem;
+    display: none;
 }
 
 .slideshow {
