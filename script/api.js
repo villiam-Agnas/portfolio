@@ -25,7 +25,7 @@ async function fetchData(){
 
             const img = document.createElement("img")
             img.classList.add("project-img")
-            img.src = `../img/${repo.name}.png`
+            img.src = `./img/${repo.name}.png`
 
             imgWrapper.appendChild(img)
             project.appendChild(imgWrapper)
